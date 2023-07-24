@@ -2,12 +2,6 @@ body {
     background-color: #f9c702;
 }
 
-.title h1 {
-    background-color: purple; 
-    border-style: 40px;
-    width: 60px;
-}
-
 .title {
     font-family:'Courier New', Courier, monospace;
     position: relative; left: 600px; bottom: -50px;
@@ -40,6 +34,7 @@ body {
 .french {
     position: relative; left: 55px;
     font-size: 30px;
+    border-color: #ffffff;
     border-radius: 10px;
     background-image: linear-gradient(to right, blue 33.33%, white 33.33%,
     white 66.67%, red 66.67%);
