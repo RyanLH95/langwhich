@@ -2,6 +2,45 @@ body {
     background-color: #f9c702;
 }
 
+.title h1 {
+    background-color: purple; 
+    border-style: 40px;
+    width: 60px;
+}
+
 .title {
-    position: relative; left: 30px;
+    font-family:'Courier New', Courier, monospace;
+    position: relative; left: 600px; bottom: -50px;
+    color: #ffffff;
+}
+
+.main-content {
+    position: relative; left: 550px; bottom: -100px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.tagline {
+    position: relative; left: -150px; bottom: -40px;
+}
+
+.choice {
+    position: relative; left: 10px; bottom: -100px;
+}
+
+.choice .clickme {
+    font-size: 30px;
+    border-radius: 10px;
+    position: relative; bottom: 20px;
+}
+
+.choice h1 {
+    position: relative; left: -280px;
+}
+
+.french {
+    position: relative; left: 55px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, blue 33.33%, white 33.33%,
+    white 66.67%, red 66.67%);
 }
