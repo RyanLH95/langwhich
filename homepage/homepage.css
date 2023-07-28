@@ -56,6 +56,10 @@ body {
     position: absolute; bottom: -20px; left: 15px;
 }
 
+.lang a {
+    position: relative; bottom: -20px; left: -1px;
+}
+
 .flag-lang:hover .lang {
-    display: inline-block;
+    display: block;
 }
