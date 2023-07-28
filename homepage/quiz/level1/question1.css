@@ -1,0 +1,47 @@
+body {
+    background-color: #ffffff;
+}
+
+.border {
+    background-color: #f9c702;
+    margin-left: -10px;
+    margin-right: -50px;
+    margin-top: -10px; 
+}
+
+/* elements within border e.g. home, quiz etc */
+.panel {
+    display: flex;
+    margin-left: 50px;
+    gap: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.flag-lang a {
+    position: relative; bottom: -30px; left: 350px;
+}
+
+.lang {
+    display: none;
+    position: absolute; left: 1273px; bottom: 565px;
+    background-color: #f9f9f9;
+    height: 60px;
+    min-width: 98px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 1px 1px;
+    z-index: 1;
+}
+
+.lang h5 {
+    position: absolute; bottom: -10px; left: 17px;
+}
+
+.lang a {
+    position: relative; bottom: -10px; left: -1px;
+    text-decoration: none;
+}
+
+.flag-lang:hover .lang {
+    display: block;
+}
