@@ -45,3 +45,44 @@ body {
 .flag-lang:hover .lang {
     display: block;
 }
+
+.quiz-content {
+    position: relative; left: 530px; bottom: -50px;
+}
+
+.header h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    position: relative; left: 45px;
+}
+
+.question h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    position: relative; left: -140px;
+}
+
+.answers button {
+    position: relative; left: -330px; bottom: -30px;
+    font-size: 30px;
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75%;
+    position: relative;
+    gap: 10px; 
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    gap: 10px;
+  }
