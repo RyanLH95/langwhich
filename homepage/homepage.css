@@ -43,7 +43,7 @@ body {
 
 .lang {
     display: none;
-    position: absolute; left: 1273px; bottom: 514px;
+    position: absolute; left: 1273px; bottom: 565px;
     background-color: #f9f9f9;
     height: 60px;
     min-width: 98px;
@@ -53,11 +53,12 @@ body {
 }
 
 .lang h5 {
-    position: absolute; bottom: -20px; left: 15px;
+    position: absolute; bottom: -10px; left: 17px;
 }
 
 .lang a {
-    position: relative; bottom: -20px; left: -1px;
+    position: relative; bottom: -10px; left: -1px;
+    text-decoration: none;
 }
 
 .flag-lang:hover .lang {
