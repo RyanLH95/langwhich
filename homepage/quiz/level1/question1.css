@@ -63,7 +63,7 @@ body {
 }
 
 .answers button {
-    position: relative; left: -330px; bottom: -30px;
+    position: relative; left: -350px; bottom: -30px;
     font-size: 30px;
     background-color: blue;
     color: #ffffff;
