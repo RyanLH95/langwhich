@@ -65,6 +65,7 @@ body {
 .answers button {
     position: relative; left: -350px; bottom: -30px;
     font-size: 30px;
+    border-color: rgb(255, 255, 255);
     background-color: blue;
     color: #ffffff;
     border-radius: 30px;
