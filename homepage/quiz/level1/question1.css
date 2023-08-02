@@ -1,6 +1,5 @@
-body {
-    background-color: #ffffff;
-}
+/* top border content selectors only */
+
 
 .border {
     background-color: #f9c702;
@@ -46,44 +45,32 @@ body {
     display: block;
 }
 
-.quiz-content {
-    position: relative; left: 530px; bottom: -50px;
+/* Selectors for quiz container onwards */
+.container, .container::before, .container::after {
+    box-sizing: border-box; /* to make editing height and width easier */
+    font-family: monospace;
 }
 
-.header h2 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 60px;
-    position: relative; left: 45px;
+body {
+    --hue: var(--hue-neutral); /* this variable is created for the colour when no option is selected */
+    background-color: #ffffff(var(--hue-neutral))
 }
 
-.question h2 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
-    position: relative; left: -140px;
+body.correct {
+    --hue: var(--hue-correct); /* for when answer is correct */
 }
 
-.answers button {
-    position: relative; left: -350px; bottom: -30px;
-    font-size: 30px;
-    border-color: rgb(255, 255, 255);
-    background-color: blue;
-    color: #ffffff;
-    border-radius: 30px;
+body.wrong {
+    --hue: var(--hue-wrong); /* for when answer is wrong */
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 75%;
-    position: relative;
-    gap: 10px; 
-  }
-
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    gap: 10px;
-  }
+.container {
+    height: 500px;
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    position: relative; top: 40px; left: 310px;
+}
