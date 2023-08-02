@@ -4,47 +4,19 @@
     <link rel="stylesheet" href="question1.css">
   </head>
   <body>
-    <!--"border" div for panel of features-->
-    <div class="border">
-        <!--div for panel, for USERS to navigate-->
-      <div class="panel">
-        <h3>Home</h3>
-        <h3>Quiz</h3>
-        <h3>Learner</h3>
-        <h3>Convo-System</h3>
-        <h3>language</h3>
-        <!--flag div for USERS to change language-->
-          <div class="flag-lang">
-            <a><img src="file:///Users/ryanhenry/repos/langwhich/images/british_flag.jpeg" 
-                alt="british" width="100"></a>
-            <div class="lang">
-              <h5><a href="homepage_fr.html">French</a></h5>
-            </div>
-          </div>
-      </div>
-    </div>
-    
-    <!--div content for quiz-->
-    <div class="quiz-content">
-      <div class="header">
-        <h2>Question 1</h2>
-      </div>
-      <!--div for question-->
-      <div class="question">
-        <h2>How do you say "Hello" in french?</h2>
-      </div>
-      <!--div for answers and for 2x2 row/column display-->
-      <div class="answers">
-        <div class="row">
-          <div class="column">
-            <button>Bonjour!</button>
-            <button>Oui!</button>
-          </div>
-          <div class="column">
-            <button>Arrêt</button>
-            <button>S'il te plaît</button>
-          </div>
+    <div class="container">
+      <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn correct">Answer 1</button>
+          <button class="btn wrong">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
         </div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
       </div>
     </div>
   </body>
