@@ -51,9 +51,15 @@
     font-family: monospace;
 }
 
+:root { /* top level element for '.btn value/--hue value' colors */
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
 body {
     --hue: var(--hue-neutral); /* this variable is created for the colour when no option is selected */
-    background-color: #ffffff(var(--hue-neutral))
+    background-color: hsl(var(--hue-neutral)100%, 20%);
 }
 
 body.correct {
@@ -74,3 +80,27 @@ body.wrong {
     box-shadow: 0 0 10px 2px;
     position: relative; top: 40px; left: 310px;
 }
+
+#question {
+    font-size: 30px;
+}
+
+.btn-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, auto);
+    grid: 10px;
+    margin: 20px 0;
+}
+
+.btn-grid button {
+    font-size: 30px;
+    position: relative; top: 150px;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+}
+
