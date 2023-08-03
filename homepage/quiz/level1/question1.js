@@ -13,3 +13,23 @@ startButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 })
+
+function startGame() {
+    
+}
+
+function setNextQuestion() {
+
+}
+
+function showQuestion() {
+
+}
+
+function resetState() {
+
+}
+
+function selectAnswer() {
+
+}
