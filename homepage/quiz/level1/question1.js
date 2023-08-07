@@ -6,7 +6,7 @@ const questionElement = document.getElementById('question'); // returns  an 'que
 const answerButtonsElement = document.getElementById
 ('answer-buttons'); // returms an 'answer-buttons' id from HTML file.
 
-let currentQuestionIndex;
+let shuffledQuestion, currentQuestionIndex; // to shuffle the question order and to know which question the user is currently on
 
 startButton.addEventListener('click', startGame) // When we click on startButton, it cues the code that's inside start
 
