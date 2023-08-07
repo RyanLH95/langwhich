@@ -18,6 +18,8 @@ nextButton.addEventListener('click', () => {
 function startGame() {
     console.log('Started') // to check if the 'Start' button is being called when clicked.
     startButton.classList.add('hide') // to hide the start button
+    shuffledQuestion = questions.sort(() => Math.random() - .5) // this method will help give a random array during the quiz.
+    currentQuestionIndex = 0 // This is for starting on the first questions with array
     questionContainerElement.classList.remove('hide') // this causes the 'question-container' to show
     setNextQuestion()
 }
