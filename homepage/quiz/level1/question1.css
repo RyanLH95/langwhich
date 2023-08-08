@@ -70,14 +70,14 @@ body.wrong {
 
 /* container for elements within quiz */
 .container {
-    height: 500px;
+    height: 70px;
     width: 800px;
     max-width: 80%;
     background-color: white;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
-    position: relative; top: 40px; left: 310px;
+    position: relative; top: 230px; left: 310px;
 }
 
 #question {
