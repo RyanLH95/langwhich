@@ -26,6 +26,7 @@ function startGame() {
 }
 
 function setNextQuestion() {
+    resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
@@ -39,16 +40,25 @@ function showQuestion(question) {
             button.dataset.correct = answer.correct
         }
         button.addEventListener('click', selectAnswer)
-        (answerButtonsElement.appendChild(button))
+        answerButtonsElement.appendChild(button)
     })
 }
 
-function resetState() {
-
+function resetState() { // this function is for reset everything back to default state when initiating new question
+     nextButton.classList.add('hide') // to hide next button unless called 
+     while (answerButtonsElement.firstChild) { // Add 'while' loop
+        answerButtonsElement.removeChild // if the there is child in answerButtonsElement, we want it removed
+        (answerButtonsElement.firstChild)
+     }
 }
 
-function selectAnswer() {
-
+function selectAnswer(e) {
+     const selectedButton = e.target // 
+     const correct = selectedButton.dataset.correct 
+     setStatusClass(document.body, correct) // function to take 'document.body' for whether it should be set to correct or wrong
+     Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+     })
 }
 
 function setStatusClass() {
