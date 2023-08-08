@@ -63,8 +63,8 @@ function selectAnswer(e) {
      if (shuffledQuestions.length > currentQuestionIndex + 1) { // this means that we have more questions than we are currently on
      nextButton.classList.remove('hide')
     } else {
-        startButton.innerText = 'Restart'
-        startButton.classList.remove('hide')
+      startButton.innerText = 'Restart'
+      startButton.classList.remove('hide')
     }
 }
 
