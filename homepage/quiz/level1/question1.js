@@ -45,6 +45,7 @@ function showQuestion(question) {
 }
 
 function resetState() { // this function is for reset everything back to default state when initiating new question
+    clearStatusClass(document.body)
      nextButton.classList.add('hide') // to hide next button unless called 
      while (answerButtonsElement.firstChild) { // Add 'while' loop
         answerButtonsElement.removeChild // if the there is child in answerButtonsElement, we want it removed
@@ -56,13 +57,24 @@ function selectAnswer(e) {
      const selectedButton = e.target // 
      const correct = selectedButton.dataset.correct 
      setStatusClass(document.body, correct) // function to take 'document.body' for whether it should be set to correct or wrong
-     Array.from(answerButtonsElement.children).forEach(button => {
+     Array.from(answerButtonsElement.children).forEach(button => { // this needs to be an array so that we can convert for the forEach loop
         setStatusClass(button, button.dataset.correct)
      })
+     if (shuffledQuestions.length > currentQuestionIndex + 1) { // this means that we have more questions than we are currently on
+     nextButton.classList.remove('hide')
+    } else {
+        startButton.innerText = 'Restart'
+        startButton.classList.remove('hide')
+    }
 }
 
-function setStatusClass() {
-
+function setStatusClass(element, correct) {
+     clearStatusClass(element)
+     if (correct) {
+        element.classList.add('correct')
+     } else {
+        element.classList.add('wrong')
+     }
 }
 
 function clearStatusClass() {
