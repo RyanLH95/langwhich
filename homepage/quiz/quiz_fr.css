@@ -1,0 +1,81 @@
+body {
+    background-color:#f9c702;
+}
+
+.border {
+    background-color: #f9c702;
+    margin-left: -10px;
+    margin-right: -50px;
+    margin-top: -10px; 
+}
+
+.panel {
+    display: flex;
+    margin-left: 50px;
+    gap: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.panel a {
+    color: black;
+    text-decoration: none;
+}
+
+.flag-lang a {
+    position: relative; bottom: -30px; left: 902px;
+}
+
+.lang {
+    display: none;
+    position: absolute; left: 1273px; bottom: 565px;
+    background-color: #f9f9f9;
+    height: 60px;
+    min-width: 98px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 1px 1px;
+    z-index: 1;
+}
+
+.lang h5 {
+    position: absolute; bottom: -10px; left: 14px;
+}
+
+.lang a {
+    position: relative; bottom: -10px; left: -1px;
+    text-decoration: none;
+}
+
+.flag-lang:hover .lang {
+    display: block;
+}
+
+.main-content {
+    position: relative; bottom: -100px; left: 350px;
+}
+
+.title {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.tagline {
+    position: relative; bottom: -10px; left: 180px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.clickme button {
+    position: relative; bottom: -30px; left: 250px;
+    font-size: 30px;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(54, 158, 255);
+}
+
+.clickme a {
+    text-decoration: none;
+    color: white;
+}
