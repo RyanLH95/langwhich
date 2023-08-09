@@ -20,6 +20,11 @@ body {
     font-size: 30px;
 }
 
+.panel a {
+    color: black;
+    text-decoration: none;
+}
+
 .panel-two {
     display: flex;
     gap: 200px;
@@ -38,7 +43,7 @@ body {
 }
 
 .flag-lang a {
-    position: relative; bottom: -30px; left: 350px;
+    position: relative; bottom: -30px; left: 963px;
 }
 
 .lang {
