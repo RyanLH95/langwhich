@@ -39,6 +39,34 @@ html, body {
     gap: 10px;
 }
 
+.flag-lang a img {
+    position: relative; bottom: -30px; left: 821.5px;
+}
+
+.lang {
+    display: none;
+    position: absolute; left: 1273px; bottom: 565px;
+    background-color: #f9f9f9;
+    height: 60px;
+    min-width: 98px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 1px 1px;
+    z-index: 1;
+}
+
+.lang h5 {
+    position: absolute; top: -36px; left: 17px;
+}
+
+.lang a {
+    position: relative; bottom: -10px; left: -4px;
+    text-decoration: none;
+}
+
+.flag-lang:hover .lang {
+    display: block;
+}
+
 .panel-two {
     display: flex;
     gap: 200px;
