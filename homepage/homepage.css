@@ -33,23 +33,6 @@ html, body {
     position: relative; top: 8px; left: 8px;
 }
 
-.panel-two {
-    display: flex;
-    gap: 200px;
-}
-
-.text {
-    font-size: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative; left: 50px; bottom: -60px;
-}
-
-.flags img {
-    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, 
-      from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    position: relative; bottom: -50px;
-}
-
 .flag-lang a img {
     position: relative; bottom: -30px; left: 864px;
 }
@@ -76,6 +59,23 @@ html, body {
 
 .flag-lang:hover .lang {
     display: block;
+}
+
+.panel-two {
+    display: flex;
+    gap: 200px;
+}
+
+.text {
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative; left: 50px; bottom: -60px;
+}
+
+.flags img {
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, 
+      from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    position: relative; bottom: -50px;
 }
 
 /* Panel-three onwards only */
