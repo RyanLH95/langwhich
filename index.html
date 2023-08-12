@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LANGWHICH</title>
     <meta charset="utf-8" lang="eng">
     <link rel="stylesheet" href="style.css">
-    <sript src="app.js" defer></sript>
   </head>
+  <body>
+    <!--"border" div for border color and features-->
+    <div class="border">
+        <!--div for panel, for USERS to navigate-->
+        <div class="panel">
+          <h3><a href="index.html">Home</a></h3>
+          <h3><a href="/Users/ryanhenry/repos/langwhich/quiz/quiz.html">Quiz</a></h3>
+          <h5>Eng</h5>
+          <!--flag div for USERS to change language-->
+            <div class="flag-lang">
+              <a><img src="images/british_flag.jpeg" alt="british" width="100"></a>
+              <div class="lang">
+                <h5><a href="index_fr.html">French</a></h5>
+              </div>
+            </div>
+        </div>    
+    </div>
+    <!--"panel-two" div created for content-->
+    <div class="panel-two">
+      <div class="text one">
+        <p><strong>"Langwhich" is a project of mine that is made to help<br> people looking to learn a language
+          but also have fun<br> doing so. Whilst still in working in progress, I have<br> provided a quiz, dictionary
+          and conversation for users<br> to help practice their language skills.<br><br>
 
-   <body>
-    <!--div for title 'h1' only-->
-     <div class="title">
-       <h1>LANGWHICH</h1>
-     </div>
-     <!--div created for everything else within this page-->
-     <div class="main-content">
-       <h3>Hi! Welcome to 'LANGWHICH'.</h3>
-       <!--div for the opening statement(h3) for website-->
-       <div class="tagline">
-        <h3>Looking to learn a language? You've come to right place.</h3>
-       </div>
-       <!--div for '.choice' class, for both button elements and h1 element-->
-       <div class="choice">
-         <button class="clickme">Click Here to Begin</button>
-           <h1>Which language would you like to learn?</h1>
-           <button class="french">FRENCH</button>
-       </div>
-     </div>
-   </body>
+          P.S. more languages will be added in the future.
+        </strong></p>
+      </div>
+      <!--div for flag picture-->
+      <div class="flags">
+        <img src="images/country_flags.jpeg" alt="countryflag" width="500">
+      </div>
+    </div>
+
+   <!--second part of content-->
+    <div class="panel-three">
+      <div class="text two">
+        <p><strong>This will also be a community based website so please feel to add<br> feedback and or
+          give any advice on improvement.
+        </strong></p>
+      </div>
+    </div>
+    <div class="bottom-border">
+      <div class="bottom-container">
+        <div id="email">
+          <img src="images/email_icon.jpeg" width="30" height="30">
+          <h5><a href="mailto: ryan-henry@hotmail.co.uk">ryan-henry@hotmail.co.uk</a></h5>
+        </div>
+        <div id="linkedin">
+          <img src="images/linkedin.png" width="30" height="30">
+          <h5><a href="https://www.linkedin.com/in/ryan-henry-17004a12b/">Ryan Henry</a></h5>
+        </div>
+        <div id="github">
+          <img src="images/github-sign.png" width="30" height="30">
+          <h5><a href="https://github.com/RyanLH95">RyanLH95</a></h5>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-
-<!--create a language learning app using javascript
-using the relevant syntax, develop way to learn 'French'.
-develop a function where the 'USER' can chat with the 'COMPUTER' in 'French'.
-Develop function where 'USER' must type the correct 'sentence' or 'word' in 'French' in order to proceed.
-Develop a quiz game to test the 'USER's' knowledge-->
