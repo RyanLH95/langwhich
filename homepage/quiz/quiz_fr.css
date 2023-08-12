@@ -1,14 +1,19 @@
-body {
+html, body {
     background-color:#f9c702;
+    margin: 0%;
 }
 
+/* border ONLY selector */
 .border {
     background-color: #f9c702;
+    height: 119px;
     margin-left: -10px;
-    margin-right: -50px;
+    margin-right: -140px;
     margin-top: -10px; 
+    max-width: 115%;
 }
 
+/* elements within border e.g. home, quiz etc */
 .panel {
     display: flex;
     margin-left: 50px;
@@ -17,13 +22,24 @@ body {
     font-size: 30px;
 }
 
+
+.panel h5 {
+    position: relative; right: -875px; top: 7px;
+}
+
+.panel #quiz {
+    position: relative; left: -16.1px;
+}
+
 .panel a {
     color: black;
     text-decoration: none;
+    position: relative; top: 8px; left: 8px;
+    gap: 10px;
 }
 
-.flag-lang a {
-    position: relative; bottom: -30px; left: 902px;
+.flag-lang a img {
+    position: relative; bottom: -30px; left: 821.5px;
 }
 
 .lang {
@@ -38,11 +54,11 @@ body {
 }
 
 .lang h5 {
-    position: absolute; bottom: -10px; left: 14px;
+    position: absolute; top: -36px; left: 17px;
 }
 
 .lang a {
-    position: relative; bottom: -10px; left: -1px;
+    position: relative; bottom: -10px; left: -4px;
     text-decoration: none;
 }
 
@@ -51,7 +67,7 @@ body {
 }
 
 .main-content {
-    position: relative; bottom: -100px; left: 350px;
+    position: relative; bottom: -108px; left: 394px;
 }
 
 .title {
@@ -61,14 +77,14 @@ body {
 }
 
 .tagline {
-    position: relative; bottom: -10px; left: 180px;
+    position: relative; bottom: -10px; left: 130px;
     font-family:'Courier New', Courier, monospace;
     font-size: 30px;
     color: #ffffff;
 }
 
 .clickme button {
-    position: relative; bottom: -30px; left: 250px;
+    position: relative; bottom: -30px; left: 214px;
     font-size: 30px;
     border-radius: 10px;
     border-color: rgb(0, 0, 0);
