@@ -1,0 +1,42 @@
+<main>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="question1_fr.css">
+    <script defer src="question1_fr.js"></script>
+  </head>
+  <body>
+    <!--"border" div for panel of features-->
+    <div class="border">
+        <!--div for panel, for USERS to navigate-->
+      <div class="panel">
+        <h3><a href="../../homepage_fr.html">Maison</a></h3>
+        <h3><a id="quiz" href="../quiz_fr.html">Le Quiz</a></h3>
+        <h5>Fr</h5>
+        <!--flag div for USERS to change language-->
+          <div class="flag-lang">
+            <a><img src="file:///Users/ryanhenry/repos/langwhich/images/french_flag.jpeg" alt="french" width="100" height="50"></a>
+            <div class="lang">
+              <a href="question1.html"><h5>Anglais</h5></a>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <!--div content for quiz-->
+    <div class="container">
+      <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn correct">Answer 1</button>
+          <button class="btn wrong">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+      </div>
+    </div>
+  </body>
+</main>
