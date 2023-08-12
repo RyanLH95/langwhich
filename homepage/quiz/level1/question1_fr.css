@@ -1,9 +1,16 @@
-/* top border content selectors only */
+html, body {
+    background-color: white;
+    margin: 0%;
+}
+
+/* border ONLY selector */
 .border {
     background-color: #f9c702;
+    height: 119px;
     margin-left: -10px;
-    margin-right: -50px;
+    margin-right: -140px;
     margin-top: -10px; 
+    max-width: 115%;
 }
 
 /* elements within border e.g. home, quiz etc */
@@ -15,13 +22,24 @@
     font-size: 30px;
 }
 
+
+.panel h5 {
+    position: relative; right: -875px; top: 7px;
+}
+
+.panel #quiz {
+    position: relative; left: -8px;
+}
+
 .panel a {
     color: black;
     text-decoration: none;
+    position: relative; top: 8px; left: 8px;
+    gap: 10px;
 }
 
-.flag-lang a {
-    position: relative; bottom: -30px; left: 902px;
+.flag-lang a img {
+    position: relative; bottom: -30px; left: 821.5px;
 }
 
 .lang {
@@ -36,11 +54,11 @@
 }
 
 .lang h5 {
-    position: absolute; bottom: -10px; left: 14px;
+    position: absolute; top: -36px; left: 17px;
 }
 
 .lang a {
-    position: relative; bottom: -10px; left: -1px;
+    position: relative; bottom: -10px; left: -4px;
     text-decoration: none;
 }
 
