@@ -28,7 +28,7 @@ html, body {
 }
 
 .panel #quiz {
-    position: relative; left: -8px; top: 8px;
+    position: relative; left: -16px; top: 0px;
 }
 
 .panel a {
